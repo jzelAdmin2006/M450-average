@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Linq;
-
-namespace Average.Test;
+﻿namespace Average.Test;
 
 public class StatisticsTest
 {
