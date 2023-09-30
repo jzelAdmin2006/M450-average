@@ -68,6 +68,6 @@ public class Statistics
                 modes.Add(key);
             }
         }
-        return modes;
+        return modes.OrderBy(n => n).ToList();
     }
 }

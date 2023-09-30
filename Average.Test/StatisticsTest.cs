@@ -44,7 +44,7 @@ public class StatisticsTest
     [InlineData(new[] { 1 }, new[] { 1 })]
     [InlineData(new[] { 1, 2, 3, 4 }, new[] { 1, 2, 3, 4 })]
     [InlineData(new[] { 23, 25, 23, 1354, 1, -142 }, new[] { 23 })]
-    [InlineData(new[] { 23, 25, 23, 1354, 1, -142, -142 }, new[] { 23, -142 })]
+    [InlineData(new[] { 23, 25, 23, 1354, 1, -142, -142 }, new[] { -142, 23 })]
     void TestCalculateMode(int[] values, int[] expected)
     {
         List<int> actual = Statistics.Mode(new List<int>(values));
