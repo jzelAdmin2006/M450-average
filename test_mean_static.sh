@@ -1,16 +1,14 @@
 #!/usr/bin/env bash
 
 set -euo pipefail
-
 cat << EOF > mean_test_data.txt
 1
 2
 3
 EOF
+expected=2
 
 actual=$(dotnet run --project Average.Demo mean mean_test_data.txt)
-
-expected=2
 
 rm mean_test_data.txt
 
