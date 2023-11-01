@@ -12,7 +12,6 @@ for i in {1..20}; do
 done
 awk -f mode.awk random_mode_test_data.txt > expected.txt
 
-dotnet run --project Average.Demo mode random_mode_test_data.txt > actual.txt
-sed -i 's/\r\n/\n/' actual.txt
+dotnet run --project Average.Demo mode random_mode_test_data.txt | sed 's/\r\n/\n/' > actual.txt
 
 cmp -s actual.txt expected.txt || exit 1
