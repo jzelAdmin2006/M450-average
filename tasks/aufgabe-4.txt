@@ -1,0 +1,2 @@
+Das Bereitstellen des Files muss automatisiert werden. Anschliessend müssten über eine Konsole die dotnet Befehle automatisch eingegeben, das Ergebnis automatisch ausgelesen und schliesslich überprüft werden.
+Zwar könnte man das alles mit C# selbst oder einer Skriptsprache ausprogrammieren, allerdings gäbe es vermutlich geeignetere Werkzeuge dafür. Ich kenne aber bisher keine.
